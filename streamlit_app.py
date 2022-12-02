@@ -36,7 +36,7 @@ try:
     fruity_normalized = pandas.json_normalise(frityvice_response.json())
     streamlit.dataframe(fruityvice_normalized)
       
-execpt URLError as e:
+except URLError as e:
   streamlt.error()
 
 
