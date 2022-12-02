@@ -39,9 +39,6 @@ try:
 except URLError as e:
   streamlt.error()
 
-
-# parse out json 
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # format in a grid
 streamlit.dataframe(fruityvice_normalized)
 
