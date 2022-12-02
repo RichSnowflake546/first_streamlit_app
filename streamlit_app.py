@@ -39,8 +39,6 @@ try:
 except URLError as e:
   streamlt.error()
 
-# format in a grid
-streamlit.dataframe(fruityvice_normalized)
 
 streamlit.stop()
 
